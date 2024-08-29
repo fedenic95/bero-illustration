@@ -1,0 +1,55 @@
+<section
+  class="flex flex-col md:flex-row justify-center items-center gap-8 bg-viola p-5 m-5 rounded-2xl text-bianco"
+>
+  <div class="py-2 px-4 w-full m-10">
+    <h2 class="mb-4 text-4xl font-extrabold text-center font-corsivo">
+      Contattami
+    </h2>
+    <form action="#" class="flex flex-col gap-3">
+      <div>
+        <label for="email" class="block mb-2 text-sm font-medium">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="bg-bianco rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 text-nero"
+          placeholder="nome@example.com"
+          required
+        />
+      </div>
+      <div>
+        <label for="subject" class="block mb-2 text-sm font-medium"
+          >Oggetto</label
+        >
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          class="bg-bianco rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 text-nero"
+          placeholder="Oggetto del messaggio"
+          required
+        />
+      </div>
+      <div class="sm:col-span-2">
+        <label for="message" class="block mb-2 text-sm font-medium"
+          >Messaggio</label
+        >
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          class="bg-bianco rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 text-nero"
+          placeholder="Scrivi il tuo messaggio"
+        ></textarea>
+      </div>
+      <div class="flex w-full justify-center">
+        <button
+          type="submit"
+          class="py-3 px-10 text-sm font-medium text-center text-bianco rounded-lg bg-verde lg:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+        >
+          Invia
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

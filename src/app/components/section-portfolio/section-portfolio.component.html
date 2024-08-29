@@ -1,0 +1,14 @@
+<section
+  class="flex flex-col justify-center gap-2 bg-viola m-5 rounded-2xl text-bianco"
+>
+  <h2 class="text-4xl my-8 font-extrabold text-center font-corsivo capitalize">
+    {{ splitName(nomeSezione) }}
+  </h2>
+  @if(paragrafi.length === 0){
+  <p class="px-10 text-center">{{ paragrafo }}</p>
+  } @else { @for (par of paragrafi; track $index) {
+  <p class="px-10 text-center">{{ par }}</p>
+  } }
+
+  <app-carousel [nomeCarosello]="nomeSezione" class="w-full"></app-carousel>
+</section>
